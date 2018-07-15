@@ -37,14 +37,53 @@ a {
 
 #bar {
     position: fixed;
-    background-color: gray;
-    width: 200px;
+    background-color: #444;
+    width: 90px;
     height: 100%;
 }
 
-#field {
-    background-color: bisque;
-    margin-left: 200px;
+#bar_menu {
     width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.test_icon {
+    background-color: #00d4aa;
+    width: 60px;
+    height: 60px;
+}
+
+#field {
+    margin-left: 90px;
+    width: calc(100%-90px);
     height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.timeline {
+    margin-left: 20px;
+    min-width: 300px;
+    height: 200px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline_header {
+    width: 100%;
+    height: 60px;
+}
+
+.timeline_tweets {
+    width: 100%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
 }
