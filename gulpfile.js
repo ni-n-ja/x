@@ -48,7 +48,7 @@ gulp.task('browser-sync', () => {
             baseDir: "./"
         },
         port: 9001,
-        open: false
+        open: true
     }, () => {
         let url = instance.getOption('urls').get('external');
         qr.generate(url);
