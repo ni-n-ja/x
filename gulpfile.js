@@ -45,10 +45,11 @@ gulp.task('browser-sync', () => {
     const instance = browserSync({
         files: ['js/**/*.js', '**/*.html', 'css/**/*.css', '!js/service-worker.js'],
         server: {
-            baseDir: "./"
+            baseDir: "./",
+            index: "top.html"
         },
         port: 9001,
-        open: true
+        open: false
     }, () => {
         let url = instance.getOption('urls').get('external');
         qr.generate(url);
